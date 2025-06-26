@@ -1,6 +1,6 @@
 diff --git a/arch/arm/boot/dts/zynq-libre.dts b/arch/arm/boot/dts/zynq-libre.dts
 new file mode 100644
-index 000000000000..3c8d127b7329
+index 000000000000..4ecd3781be97
 --- /dev/null
 +++ b/arch/arm/boot/dts/zynq-libre.dts
 @@ -0,0 +1,61 @@
@@ -38,7 +38,7 @@ index 000000000000..3c8d127b7329
 +
 +
 +/ {
-+	
++
 +	leds {
 +		compatible = "gpio-leds";
 +		led0 {
@@ -64,10 +64,10 @@ index 000000000000..3c8d127b7329
 +};
 +
 +
-+	
++
 diff --git a/arch/arm/boot/dts/zynq-libre.dtsi b/arch/arm/boot/dts/zynq-libre.dtsi
 new file mode 100644
-index 000000000000..5a524e0a741f
+index 000000000000..b8bd8e970d4c
 --- /dev/null
 +++ b/arch/arm/boot/dts/zynq-libre.dtsi
 @@ -0,0 +1,450 @@
@@ -517,13 +517,13 @@ index 000000000000..5a524e0a741f
 +
 +		en_agc-gpios = <&gpio0 66 0>;
 +		reset-gpios = <&gpio0 67 0>;
-+		
++
 +	};
 +};
 +
 diff --git a/arch/arm/configs/zynq_libre_defconfig b/arch/arm/configs/zynq_libre_defconfig
 new file mode 100644
-index 000000000000..994013f83ecc
+index 000000000000..3a78cc84b182
 --- /dev/null
 +++ b/arch/arm/configs/zynq_libre_defconfig
 @@ -0,0 +1,286 @@

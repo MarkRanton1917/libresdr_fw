@@ -134,7 +134,7 @@ index 0000000000..28c5739ffe
 +esac
 diff --git a/board/libre/S23udc b/board/libre/S23udc
 new file mode 100644
-index 0000000000..b599f699b6
+index 0000000000..33cb0a73bd
 --- /dev/null
 +++ b/board/libre/S23udc
 @@ -0,0 +1,168 @@
@@ -475,7 +475,7 @@ index 0000000000..040e7dda6f
 +
 diff --git a/board/libre/S41network b/board/libre/S41network
 new file mode 100644
-index 0000000000..78433a60d7
+index 0000000000..752159965d
 --- /dev/null
 +++ b/board/libre/S41network
 @@ -0,0 +1,30 @@
@@ -685,7 +685,7 @@ index 0000000000..0d093a53fc
 +esac
 diff --git a/board/libre/busybox-1.25.0.config b/board/libre/busybox-1.25.0.config
 new file mode 100644
-index 0000000000..88728cc9f2
+index 0000000000..7a5c3055ac
 --- /dev/null
 +++ b/board/libre/busybox-1.25.0.config
 @@ -0,0 +1,1135 @@
@@ -8818,7 +8818,7 @@ index 0000000000..bf01819f17
 +}
 diff --git a/board/libre/wpa_supplicant/ifupdown.sh b/board/libre/wpa_supplicant/ifupdown.sh
 new file mode 100644
-index 0000000000..2c5b0608ce
+index 0000000000..da0b315769
 --- /dev/null
 +++ b/board/libre/wpa_supplicant/ifupdown.sh
 @@ -0,0 +1,172 @@
@@ -8836,7 +8836,7 @@ index 0000000000..2c5b0608ce
 +# This file is provided by the wpasupplicant package.
 +
 +#####################################################################
-+# Copyright (C) 2006 - 2009 Debian/Ubuntu wpasupplicant Maintainers 
++# Copyright (C) 2006 - 2009 Debian/Ubuntu wpasupplicant Maintainers
 +# <pkg-wpa-devel@lists.alioth.debian.org>
 +#
 +# This program is free software; you can redistribute it and/or
@@ -8925,7 +8925,7 @@ index 0000000000..2c5b0608ce
 +		if [ ! -s "$IF_WPA_CONF" ]; then
 +			wpa_msg stderr "cannot read contents of $IF_WPA_CONF"
 +			exit 1
-+		fi	
++		fi
 +		WPA_SUP_CONF_CTRL_DIR=$(sed -n -e 's/[[:space:]]*#.*//g' -e 's/[[:space:]]\+.*$//g' \
 +			-e 's/^ctrl_interface=\(DIR=\)\?\(.*\)/\2/p' "$IF_WPA_CONF")
 +		if [ -n "$WPA_SUP_CONF_CTRL_DIR" ]; then
@@ -8956,7 +8956,7 @@ index 0000000000..2c5b0608ce
 +	fi
 +}
 +
-+case "$MODE" in 
++case "$MODE" in
 +	start)
 +		do_start
 +		case "$PHASE" in
@@ -8986,7 +8986,7 @@ index 0000000000..2c5b0608ce
 +				;;
 +		esac
 +		;;
-+	
++
 +	*)
 +		wpa_msg stderr "unknown mode: \"$MODE\""
 +		exit 1
@@ -8996,7 +8996,7 @@ index 0000000000..2c5b0608ce
 +exit 0
 diff --git a/configs/zynq_libre_defconfig b/configs/zynq_libre_defconfig
 new file mode 100644
-index 0000000000..600f5df2ee
+index 0000000000..7273f59474
 --- /dev/null
 +++ b/configs/zynq_libre_defconfig
 @@ -0,0 +1,68 @@
