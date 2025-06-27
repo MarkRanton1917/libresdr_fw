@@ -10,6 +10,4 @@ cd ../u-boot-xlnx
 git apply ../../patches/u-boot-xlnx.diff
 cd ../buildroot
 git apply ../../patches/buildroot.diff
-cd ..
-cp -f ../patches/Makefile Makefile
-cd ..
+cd ../..
